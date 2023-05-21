@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--? Some Meta tags -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--? Title -->
+        <title>Recipe App</title>
+        <!--? CSS link -->
+        <link rel="stylesheet" href="./style.css" />
+        <!--? JavaScript link -->
+        <script src="./script.js" defer></script>
+        <!--? Font Awesome CDN -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!--? Favicon -->
+        <link rel="icon" href="./breakfast.png" type="image/png" />
+    </head>
+    <body>
+        <!--? As always we create a container for the app -->
+        <div class="mobile-container">
+            <header>
+                <input type="text" id="searchTerm" />
+                <button id="search">
+                    <i class="fas fa-search"></i>
+                </button>
+            </header>
+            <!--? Container for favorite meals -->
+            <div class="fav-container">
+                <h3>Favorite Meals</h3>
+                <ul class="fav-meals">
+                    <!--? Favorite meals rounded pics for testing for now -->
+                </ul>
+            </div>
+            <!--? Random Meal Container -->
+            <div class="meals" id="meals"></div>
+        </div>
+        <!--? Popup Info Container -->
+        <div id="popup-info-container" class="popup-info-container hidden">
+            <div class="popup-info" id="popup-info">
+                <button id="close-popup" class="close-popup">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="meal-info"></div>
+            </div>
+        </div>
+    </body>
+</html>
