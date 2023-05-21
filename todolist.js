@@ -27,3 +27,5 @@
 // todo: make a for loop and loop through strIngredient and put the inside of li tag
 // todo: add the showMealInfo() as an event listener to images of the containers and when you tap the function should remove the .hidden class
 // todo: it needs specific type of actions to trigger the showMealInfo() function
+
+// These todos gets highlighted after you download the extension called 'Better Comments' in yours VS Code☺

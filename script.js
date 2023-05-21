@@ -18,7 +18,7 @@ async function getRandomMeal() {
     const respData = await response.json();
     const randomMeal = respData.meals[0];
     addMeal(randomMeal, true);
-    console.log(randomMeal);
+    // console.log(randomMeal);
 }
 
 async function getMealById(id) {
@@ -184,8 +184,7 @@ function showMealInfo(mealData) {
     for (let i = 1; i < 20; i++) {
         if (mealData["strIngredient" + i]) {
             ingredients.push(
-                `${mealData["strIngredient" + i]} - ${
-                    mealData["strMeasure" + i]
+                `${mealData["strIngredient" + i]} - ${mealData["strMeasure" + i]
                 }`
             );
         } else {
